@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sayamta Bajracharya</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:white;
+color:black;
+line-height:1.6;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+font-size:28px;
+margin-bottom:25px;
+border-bottom:2px solid black;
+display:inline-block;
+padding-bottom:5px;
+}
+
+a{
+text-decoration:none;
+}
+
+/* CTA / HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("laptop.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
+
+.hero h1{
+font-size:48px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:650px;
+font-size:18px;
+margin-bottom:60px;
+}
+
+.btn{
+
+border:1px solid white;
+color:white;
+
+padding:10px 22px;
+
+margin:10px;
+
+display:inline-block;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:800px;
+font-size:17px;
+}
+
+/* EDUCATION + SKILLS */
+
+.edu-skill{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+}
+
+.edu-item{
+margin-bottom:20px;
+}
+
+.skills ul{
+list-style:none;
+}
+
+.skills li{
+margin-bottom:10px;
+}
+
+/* PROJECTS */
+
+.project-card{
+
+display:flex;
+
+border:1px solid black;
+
+margin-bottom:35px;
+
+}
+
+.project-image{
+
+width:40%;
+
+background:#eee;
+
+}
+
+.project-image img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+}
+
+.project-info{
+
+padding:25px;
+
+width:60%;
+
+}
+
+.project-info h3{
+margin-bottom:10px;
+}
+
+.project-buttons{
+margin-top:15px;
+}
+
+.project-btn{
+
+border:1px solid black;
+padding:8px 18px;
+margin-right:10px;
+
+color:black;
+
+}
+
+.project-btn:hover{
+
+background:black;
+color:white;
+
+}
+
+/* FOOTER */
+
+footer{
+
+border-top:1px solid black;
+
+text-align:center;
+
+padding:30px;
+
+font-size:14px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.edu-skill{
+grid-template-columns:1fr;
+}
+
+.project-card{
+flex-direction:column;
+}
+
+.project-image{
+width:100%;
+height:220px;
+}
+
+.project-info{
+width:100%;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+
+.about-container{
+
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:30px;
+
+}
+
+.about-photo img{
+
+width:200px;
+height:200px;
+
+object-fit:cover;
+
+border-radius:100px;
+
+border:3px solid black;
+
+}
+
+.about-text{
+max-width:600px;
+}
+
+@media(max-width:900px){
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>SAYAMTA BAJRACHARYA</h1>
+
+<p>
+Computer science student with foundational full-stack knowledge,
+focused on backend development and cybersecurity.
+</p>
+
+<div>
+
+<a class="btn" href="mailto:sayamtabajracharya@gmail.com">Contact</a>
+
+<a class="btn" href="https://github.com/Sayamta-B">Github</a>
+
+<a class="btn" href="https://linkedin.com/in/sayamta-bajracharya">LinkedIn</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-photo">
+<img src="NCCS photo.jpg" alt="Sayamta Bajracharya">
+</div>
+
+<div class="about-text">
+<p>
+Computer science student with foundational full-stack knowledge,
+with a stronger focus on backend development and a keen interest in cybersecurity.
+Experienced building web applications and implementing secure coding practices
+such as CSRF protection, input validation, and prevention of XSS and SQL Injection.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- EDUCATION + SKILLS -->
+
+<section>
+
+<div class="edu-skill">
+
+
+<div>
+
+<h2>Education</h2>
+
+<div class="edu-item">
+
+<h3>Bachelor of Computer Application (BCA)</h3>
+
+<p>National College of Computer Studies (NCCS)</p>
+
+<p>Paknajol, Kathmandu</p>
+
+<p>2022 – Present</p>
+
+</div>
+
+</div>
+
+
+
+<div class="skills">
+
+<h2>Skills</h2>
+
+<ul>
+
+<li><b>Languages:</b> C, Java, Python, PHP, JavaScript</li>
+
+<li><b>Frameworks:</b> Django, React</li>
+
+<li><b>Databases:</b> MySQL, SQLite</li>
+
+<li><b>Tools:</b> Git, GitHub, Figma, Cisco Packet Tracer</li>
+
+<li><b>Concepts:</b> Data Structures, Basic Machine Learning</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section>
+
+<h2>Projects</h2>
+
+
+
+<div class="project-card">
+
+<div class="project-image">
+<img src="Emosion.png">
+</div>
+
+<div class="project-info">
+
+<h3>Emosion — CNN based Mood Detection and Music Recommendation</h3>
+
+<p>
+
+Full-stack web application using Django and React.
+Implemented CNN-based mood detection and Spotify API
+for music recommendation.
+
+</p>
+
+<p>
+
+Security features include CSRF protection
+and secure backend handling.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/moodcnnProgram">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/1zFA0XOP3pf2xEUVubjZtaH7PGVVSux08/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="project-card">
+
+<div class="project-image">
+<img src="SpinBzar.png">
+</div>
+
+<div class="project-info">
+
+<h3>SpinBzar — C2C Ecommerce Website</h3>
+
+<p>
+
+Full-stack ecommerce platform built with PHP and JavaScript.
+
+Integrated Khalti and eSewa payment gateways.
+
+</p>
+
+<p>
+
+Includes server-side validation and protection
+against XSS and SQL Injection.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/SpinBzar">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/1QZ8wbFyYWRijsOp3QwQ1h1aABGFp2pzw/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="project-card">
+<div class="project-image">
+<img src="parkGOer.png">
+</div>
+
+<div class="project-info">
+
+<h3>ParkGOer — Amusement park VMS</h3>
+
+<p>
+
+Full-stack web application using PHP and JavaScript.
+
+</p>
+
+<p>
+
+A visitor management system for amusement park which controls and monitors the visitors, tickets and rides.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/ParkGOer">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/13GBsyA-KqjnPfMCZ7JREdfN06COFYFqS/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="project-card">
+<div class="project-image">
+<img src="JotWise.png">
+</div>
+
+<div class="project-info">
+
+<h3>JotWise — Series Review Website</h3>
+
+<p>
+
+Full-stack web application using PHP and JavaScript.
+
+</p>
+
+<p>
+
+A website to review any series in Jots with short paragraph.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://drive.google.com/file/d/1SplbVgDz4gsgtBzPPV70UJKWK0gTAiaw/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-image">
+<img src="creditScore.jpg">
+</div>
+
+<div class="project-info">
+
+<h3>Credit Score Classification</h3>
+
+<p>
+
+Out of checked models (i.e.Logistic Regression, Random Forest Classification, XGBoost Classifier, LightGBM Classifier), Random Forest Classification model had the most accuracy_score.
+
+</p>
+
+<p>
+
+Built a machine learning model that can classify the credit score, given a person’s credit-related information.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/Credit_Score_Classification">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/1kcIdCey4BfdQV4Miq-sbJoIjTS1i3LiM/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="project-card">
+<div class="project-image">
+<img src="DSA.png">
+</div>
+
+<div class="project-info">
+
+<h3>Amusement Park Management Information System (DSA)</h3>
+
+<p>
+
+This project is made using C-Programming and DSA lists and queue.
+
+</p>
+
+<p>
+
+Keeps track of the visitors who visit the Amusement Parks and also the information of the rides they have taken.
+
+</p>
+
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/Amusemenmt-Park-DSA-/blob/main/amusement_dsa.c">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/113v7bdum8wpMAX9TMRyCuDaOikJ4ij08/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="project-card">
+
+<div class="project-image">
+<img src="C.png">
+</div>
+
+<div class="project-info">
+
+<h3>Number Guessing Game</h3>
+
+<p>
+    Made with C programming with concept of random number with seed.
+</p>
+
+<p>
+    User has 5 chances to guess the random number correctly. Program hints if the number is greater or lesser.
+</p>
+<div class="project-buttons">
+
+<a class="project-btn" href="https://github.com/Sayamta-B/C-Projects/blob/main/NumberGuessingGame.c">Github</a>
+
+<a class="project-btn" href="https://drive.google.com/file/d/1E6wxLOyNFJA3eXn6WSoii4CNbP5fyh8K/view?usp=sharing">Demo</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>Sayamta Bajracharya</p>
+
+<p>Chhetrapati, Kathmandu</p>
+
+<p>sayamtabajracharya@gmail.com</p>
+
+<p>9865438335</p>
+
+</footer>
+
+
+</body>
+</html>
