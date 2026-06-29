@@ -5,12 +5,18 @@ import { projects } from "../data/projects";
 
 import { Image } from "astro:assets";
 import profilePhoto from "../assets/NCCS photo.jpg";
+import laptop from "../assets/laptop.jpg";
 ---
 
 <Layout>
 <main>
 
-<section class="hero">
+<section
+  class="hero"
+  style={`background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url(${laptop.src}) center/cover no-repeat;`}
+>
 
   <h1>SAYAMTA BAJRACHARYA</h1>
 
@@ -65,7 +71,10 @@ import profilePhoto from "../assets/NCCS photo.jpg";
         Computer science student with foundational full-stack knowledge,
         with a stronger focus on backend development and web development.
         Experienced building web applications and implementing secure coding practices.
-		Publish blogs on the new topics learnt in Medium.<br/><a href="https://medium.com/@taesamban">Check out Medium account</a>
+		Publish blogs on the new topics learnt in Medium.<br/>
+    <a href="https://medium.com/@taesamban" target="_blank" rel="noopener noreferrer">
+      Read my technical blog posts on Medium
+    </a>
       </p>
 
     </div>
