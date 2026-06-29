@@ -1,0 +1,250 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:white;
+color:black;
+line-height:1.6;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+font-size:28px;
+margin-bottom:25px;
+border-bottom:2px solid black;
+display:inline-block;
+padding-bottom:5px;
+}
+
+a{
+text-decoration:none;
+}
+
+/* CTA / HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("laptop.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
+
+.hero h1{
+font-size:48px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:650px;
+font-size:18px;
+margin-bottom:60px;
+}
+
+.btn{
+
+border:1px solid white;
+color:white;
+
+padding:10px 22px;
+
+margin:10px;
+
+display:inline-block;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:800px;
+font-size:17px;
+}
+
+/* EDUCATION + SKILLS */
+
+.edu-skill{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+}
+
+.edu-item{
+margin-bottom:20px;
+}
+
+.skills ul{
+list-style:none;
+}
+
+.skills li{
+margin-bottom:10px;
+}
+
+/* PROJECTS */
+
+.project-card{
+
+display:flex;
+
+border:1px solid black;
+
+margin-bottom:35px;
+
+}
+
+.project-image{
+
+width:40%;
+
+background:#eee;
+
+}
+
+.project-image img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+}
+
+.project-info{
+
+padding:25px;
+
+width:60%;
+
+}
+
+.project-info h3{
+margin-bottom:10px;
+}
+
+.project-buttons{
+margin-top:15px;
+}
+
+.project-btn{
+
+border:1px solid black;
+padding:8px 18px;
+margin-right:10px;
+
+color:black;
+
+}
+
+.project-btn:hover{
+
+background:black;
+color:white;
+
+}
+
+/* FOOTER */
+
+footer{
+
+border-top:1px solid black;
+
+text-align:center;
+
+padding:30px;
+
+font-size:14px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.edu-skill{
+grid-template-columns:1fr;
+}
+
+.project-card{
+flex-direction:column;
+}
+
+.project-image{
+width:100%;
+height:220px;
+}
+
+.project-info{
+width:100%;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+
+.about-container{
+
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:30px;
+
+}
+
+.about-photo img{
+
+width:200px;
+height:200px;
+
+object-fit:cover;
+
+border-radius:100px;
+
+border:3px solid black;
+
+}
+
+.about-text{
+max-width:600px;
+}
+
+@media(max-width:900px){
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+}

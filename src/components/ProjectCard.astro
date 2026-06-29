@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+
+const { project } = Astro.props;
+---
+
+<div class="project-card">
+
+  <div class="project-image">
+    <Image
+      src={project.image}
+      alt={project.title}
+      width={600}
+      height={350}
+      loading="lazy"
+    />
+  </div>
+
+  <div class="project-info">
+
+    <h3>{project.title}</h3>
+
+    <p>{project.description1}</p>
+
+    <p>{project.description2}</p>
+
+    <div class="project-buttons">
+
+      <a class="project-btn" href={project.github} target="_blank">
+        Github
+      </a>
+
+      <a class="project-btn" href={project.demo} target="_blank">
+        Demo
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

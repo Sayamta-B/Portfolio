@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/projects";
+
+import { Image } from "astro:assets";
+import profilePhoto from "../assets/NCCS photo.jpg";
+---
+
+<Layout>
+<main>
+
+<section class="hero">
+
+  <h1>SAYAMTA BAJRACHARYA</h1>
+
+  <p>
+    Computer science student with foundational full-stack knowledge,
+    focused on backend development and interested in cybersecurity.
+  </p>
+
+  <div>
+
+    <div>
+
+		<a class="btn" href="mailto:sayamtabajracharya@gmail.com">
+			Email me
+		</a>
+
+		<a class="btn" href="https://github.com/Sayamta-B" target="_blank" rel="noopener noreferrer">
+			View GitHub Profile
+		</a>
+
+		<a class="btn" href="https://linkedin.com/in/sayamta-bajracharya" target="_blank" rel="noopener noreferrer">
+			Connect on LinkedIn
+		</a>
+
+	</div>
+
+  </div>
+
+</section>
+
+<section class="about">
+
+  <h2>About Me</h2>
+
+  <div class="about-container">
+
+    <div class="about-photo">
+
+      <Image
+        src={profilePhoto}
+        alt="Sayamta Bajracharya"
+        width={200}
+        height={200}
+        loading="lazy"
+      />
+
+    </div>
+
+    <div class="about-text">
+
+      <p>
+        Computer science student with foundational full-stack knowledge,
+        with a stronger focus on backend development and web development.
+        Experienced building web applications and implementing secure coding practices.
+		Publish blogs on the new topics learnt in Medium.<br/><a href="https://medium.com/@taesamban">Check out Medium account</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="edu-skill">
+
+    <div>
+
+      <h2>Education</h2>
+
+      <div class="edu-item">
+
+        <h3>Bachelor of Computer Application (BCA)</h3>
+
+        <p>National College of Computer Studies (NCCS)</p>
+
+        <p>Paknajol, Kathmandu</p>
+
+        <p>2022 – Present</p>
+
+      </div>
+
+    </div>
+
+    <div class="skills">
+
+      <h2>Skills</h2>
+
+      <ul>
+
+        <li><b>Languages:</b> C, Java, Python, PHP, JavaScript</li>
+        <li><b>Frameworks:</b> Django, React</li>
+        <li><b>Databases:</b> MySQL, SQLite</li>
+        <li><b>Tools:</b> Git, GitHub, Figma, Cisco Packet Tracer</li>
+        <li><b>Concepts:</b> Data Structures, Basic Machine Learning</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <h2>Projects</h2>
+
+  {projects.map((project) => (
+    <ProjectCard project={project} />
+  ))}
+
+</section>
+
+</main>
+
+<footer>
+
+  <p>Sayamta Bajracharya</p>
+
+  <p>Chhetrapati, Kathmandu</p>
+
+  <p>sayamtabajracharya@gmail.com</p>
+
+  <p>9865438335</p>
+
+</footer>
+
+</Layout>
